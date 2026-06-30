@@ -225,3 +225,15 @@ h2::after{
     margin-left: 10px;
     margin-right: 10px;
 }
+#galeria {
+   
+}
+.galeria-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+#galeria img{
+    height: 200px;
+    width: 300px;
+}
