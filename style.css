@@ -1,0 +1,227 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+      /*ELEMENTOS PADRÕES*/
+:root {
+    --background: #0D0D0D;
+    --surface: #1A1A1A;
+    --primary: #E63946;
+    --primary-hover: #FF4D5A;
+    --text: #F5F5F5;
+    --text-secondary: #B3B3B3;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    body{
+    line-height:1.6;}
+}
+.containert {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--primary);
+    font-weight: bolder;
+}
+a:hover {
+    color: var(--primary-hover);
+}
+/* HEADER */
+header {
+    background-color: var(--background);
+    color: var(--text);
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+header h1{
+    color: var(--text);
+    font-weight: bolder;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    border-left: 5px solid var(--primary);
+    padding-left: 12px;
+    text-shadow: 0 0 10px rgb(230,57,70,.5);
+}
+header h1 span {
+    color: var(--primary);
+}
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black;
+}
+header nav a{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s;
+}
+header nav a:hover {
+    text-shadow: 1px 1px 10px var(--primary-hover);
+}
+@media (max-width: 768px) {
+
+    /* CSS para celular */
+
+     header {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: #1a1a1a58;
+        outline: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 0.3s;
+    }
+    nav:hover {
+        box-shadow: rgb(255, 255, 255) 0px 0px 7px;
+    }
+    #hero {
+        background-position: center;
+        border-radius: 10px;
+        border-left: 4px solid var(--primary);
+    }
+
+   #hero h1 {
+    font-size: 1.3em;
+    }
+    #hero p {
+        font-size: 0.7em;
+    }
+
+}
+
+/* HERO */
+#hero {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(imagens/training1.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-secondary);
+    flex-direction: column;
+    gap: 20px;
+}
+#hero h1 {
+    color: var(--text);
+}
+#hero a {
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: var(--background);
+    border: 2px solid black;
+    border-radius: 10px;
+    align-self: center;
+    transition: 0.3s;
+}
+#hero a:hover {
+    text-shadow: 1px 1px 14px var(--primary-hover);
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* MAIN */
+main {
+    background-color: var(--background);
+}
+/* LINHAS DOS H2 */
+hr {
+    border: 2px solid var(--text-secondary);
+}
+/* PLANOS */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2em;
+    color: var(--text);
+}
+h2::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary);
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#planos article {
+    background-color: var(--surface);
+    width: 300px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: 2px solid var(--primary);
+    color: var(--text);
+    box-shadow: 4px 4px 3px black;
+}
+#planos article h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+#planos article h4{
+    text-align: center;
+    text-decoration: underline;
+    color: var(--text);
+    padding-top: 20px;
+}
+#basic {
+    color: var(--text);
+}
+#plus {
+    color: var(--text);
+    text-shadow: 1px 1px 10px var(--primary-hover);
+}
+#premium {
+    color: var(--primary);
+    text-shadow: 1px 1px 10px var(--primary-hover);
+}
+#professores article {
+    background-color: var(--surface);
+    width: 300px;
+    border-radius: 20px;
+    color: var(--text);
+    text-align: center;
+    border: 2px solid black;
+}
+#professores img {
+    width: 200px;
+    margin: 20px;
+    border-radius: 300px;
+    object-fit: cover;
+}
+#professores p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
