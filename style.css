@@ -20,7 +20,7 @@ body{
     body{
     line-height:1.6;}
 }
-.containert {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -174,7 +174,9 @@ h2::after{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+#planos {
+    padding: 40px 0;
+}
 #planos article {
     background-color: var(--surface);
     width: 300px;
@@ -205,6 +207,9 @@ h2::after{
     color: var(--primary);
     text-shadow: 1px 1px 10px var(--primary-hover);
 }
+#professores {
+    padding: 40px 0;
+}
 #professores article {
     background-color: var(--surface);
     width: 300px;
@@ -225,15 +230,11 @@ h2::after{
     margin-left: 10px;
     margin-right: 10px;
 }
-#galeria {
-   
-}
-.galeria-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-#galeria img{
-    height: 200px;
-    width: 300px;
+footer {
+    background-color: var(--surface);
+    text-align: center;
+    padding: 30px 20px;
+    width: 100%;
+    color: var(--text-secondary);
+    
 }
